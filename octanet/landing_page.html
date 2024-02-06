@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: transparent; /* Make the header transparent */
+            color: #fff;
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2; /* Ensure the header is above the background image */
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 0.5rem 2.5rem;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: lightpink;
+        }
+
+        section {
+            position: relative;
+            max-width: 550px;
+            margin-block-start: 0.5px;
+            margin: 15rem auto;
+            padding: 5rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background to improve readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+             /* Ensure the content is above the background image */
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('student-849825_1280.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            z-index: -1; 
+            filter: blur(2px);/* Place the background image at the bottom */
+        }
+
+        h1{
+            color:darkblue ;
+        }
+        h2{
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: palevioletred;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div>
+
+    <header>
+        <h1>Landing Page</h1>
+        <nav>
+            <a href="#"><b>Home</b></a>
+            <a href="#"><b>About</b></a>
+            <a href="#"><b>contact</b></a>
+            <a href="#"><b>Work</b></a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to my Landing Page</h2>
+        <p>I am KEERTHIGHA, This is my first task which was assigned to me from octanet.</p>
+        
+        <a href="#" class="cta-button">Skills</a>
+    </section>
+
+    
+
+</body>
+</html>
